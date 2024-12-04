@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .letter {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #e74c3c;
+        }
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <h1>Happy First Anniversary, Iya!</h1>
+        <p>
+            <b>Dear Iya,</b> </p>
+            <p>
+
+Happy First Anniversary, love!  
+
+Time flew by, and before we knew it, it was already a year when we began this magical journey together. All I can say is that every day spent with you is amazing, and I'm thankful for all this time. You've taught me what true love is, and I can't thank you enough for being you.  
+
+All the little things are special to the really big events we celebrated because they include you. I've organized my life so well that you have brought me so much light, love, and happiness. Without you, I can only imagine what my world would be like.  
+
+Now, I vow that I will love you every single day as we celebrate the first year more and more, that I will support you in any endeavor you pursue, and I will always be by your side no matter what life throws at us. That's just a little part of the forever we'll have, but I can't help but be excited to see what else the future holds for us.  
+
+I love you so very much Iya. Cheers to our first anniversary and many more to come!  
+
+Yours forever,  
+Groot
+        </p>
+        <button onclick="revealMessage()">Click to see a special message</button>
+        <p class="hidden-message" id="hiddenMessage">
+            I love you endlessly, Iya. You mean the world to me!
+        </p>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById("hiddenMessage");
+            message.style.display = "block";
+        }
+    </script>
+</body>
+</html>
